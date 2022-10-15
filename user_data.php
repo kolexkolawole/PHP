@@ -28,23 +28,22 @@
         
         <fieldset>
           
-          <legend><b> Your Basic Info</b></legend>
+          <legend width="50"><b> Your Basic Info</b></legend>
           <br>
           <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
           <label for="name">First Name:</label>
-          <input type="text" name="First Name">
-          <input type="submit"> <br><br>
-
-          <input type="text" id="name" name="user_name">
+          <input type="text" name="First Name" >
+         <br><br><br>
+         
             <label for="name">Last Name:</label>
-          <input type="text" id="name" name="user_name">
-
+          <input type="text" id="name" name="Last name">
+        <br><br><br>
 
           <label>Age:</label>
-          <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under 18</label><br>
+          <input type="radio" id="under_18" value="under_18" name="user_age"><label for="under_18" class="light">Under 18</label>
           <input type="radio" id="over_18" value="over_18" name="user_age"><label for="over_18" class="light">Over 18</label>
           <p></p>
-
+        
 
        <label for="cars">Choose Your country:</label>
   <select name="country" id="country">
@@ -53,11 +52,12 @@
     <option value="country">Algeria</option>
     <option value="country">united states</option>
   </select>
-  <br><br <label="" for="State">State/Province:
+  <br><br>
+   <label="" for="State">State/Province:</label>
           <input type="text" id="name" name="State/Province">
 
         
-
+<br><br><br>
         
 <label for="Gender">Choose Your Gender:</label>
   <select name="Gender" id="Gender">
@@ -68,21 +68,21 @@
   </select>
   <br><br>
 
-       
+    <br>   
   <label for="phone">Phone Number:</label><br>
   <input type="text" id="fname" name="fname" value="+234"><br>
-
+<br>
 <label for="phone">Email:</label><br>
   <input type="text" id="fname" name="fname" value="@"><br>
-          
+    <br>      
   <label for="password">Password:</label>
           <input type="password" id="password" name="user_password">
-       
+       <br>
           <label for="password">Confirm:</label>
           <input type="password" id="password" name="user_password">
-        
+        <br>
           
-          
+        <input type="submit"> <br><br>
         </fieldset>
         <fieldset>  
         
@@ -121,13 +121,13 @@
           <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>
           
          </fieldset>
-
+         
 
   <div class="button">
 
-                 
-                  <button type="button" value="submit" title="submit" id="submit" <="" button="">
-                <a href="login.html" style="text-decoration: none;">SUBMIT</a>
+  <!-- <input type="submit"> <br><br> -->
+                  <input type="button" value="submit" title="submit" id="submit" <="" button="">
+                <a href="user_data.csv" style="text-decoration: none;">SUBMIT</a>
   </button></div>
        </form>
         </div>
@@ -140,23 +140,6 @@
     <footer>
   <div>© 2022 | Made by <a href="https://www.facebook.com/K.KOLEX" target="_blank" style="text-decoration: none;"><b>KOLEX</b></a> Twitter <a href="https://twitter.com/kolexkolawole" style="text-decoration: none;"><b>Link</b></a> | Inspired by <a href="https://training.zuri.team" target="_blank" style="text-decoration: none;"><b>Zuri</b></a> &amp; <a href="https://ingressive.org" style="text-decoration: none;"><b>I4G</b></a></div>
 </footer>
-
-
-
-
-
-  email: <input type="text" email="fname">
-  <input type="submit"> <br><br>
-
-  dob: <input type="number" email="fnumber">
-  <input type="submit"> <br><br>
-
-  gender: <input type="text" gender="fname">
-  <input type="submit">  <br><br>
-
-  country: <input type="text" country="fname">
-  <input type="submit">  <br><br>
-</form>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
