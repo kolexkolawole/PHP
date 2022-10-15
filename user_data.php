@@ -21,7 +21,7 @@
   
      
 
-      <div class="column">
+      <div class="column" >
       
       <!-- <form action="index.css" method="post"> -->
         
@@ -76,16 +76,18 @@
   <input type="text" id="fname" name="fname" value="@"><br>
     <br>      
   <label for="password">Password:</label>
-          <input type="password" id="password" name="user_password">
-       <br>
+  <input type="password" id="password" name="user_password">
+       <br><br>
           <label for="password">Confirm:</label>
           <input type="password" id="password" name="user_password">
         <br>
           
-        <input type="submit"> <br><br>
-        </fieldset>
-        <fieldset>  
         
+       
+ 
+        <br><br><br><br><br><br>
+
+        <fieldset>  
           <legend><b> Your Profile</b></legend>
           <br><br>
           
@@ -126,17 +128,14 @@
   <div class="button">
 
   <!-- <input type="submit"> <br><br> -->
-                  <input type="button" value="submit" title="submit" id="submit" <="" button="">
-                <a href="user_data.csv" style="text-decoration: none;">SUBMIT</a>
+                 
+                <a href="user_data.csv" style="text-decoration: none;"> <input type="button" value="submit" title="submit" id="submit" <="" button=""</a>
   </button></div>
        </form>
         </div>
       
       <script src="script.js"></script>
    
-<br><br><br><br><br><br>
-<br><br><br><br><br><br>
-<br><br>
     <footer>
   <div>© 2022 | Made by <a href="https://www.facebook.com/K.KOLEX" target="_blank" style="text-decoration: none;"><b>KOLEX</b></a> Twitter <a href="https://twitter.com/kolexkolawole" style="text-decoration: none;"><b>Link</b></a> | Inspired by <a href="https://training.zuri.team" target="_blank" style="text-decoration: none;"><b>Zuri</b></a> &amp; <a href="https://ingressive.org" style="text-decoration: none;"><b>I4G</b></a></div>
 </footer>
