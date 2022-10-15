@@ -1,0 +1,406 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  /* redefine width to include padding and border, instead of only content area   */
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  /* body { */
+    /* background: white; color: black; */
+  /* } */
+  
+  
+  
+  
+  
+  
+  .header {
+    /* TODO make header occupy the whole row with display block */
+    /* TODO make width 100% */
+    /* TODO text align right   */
+    font stle: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    /* rgba function for red/green/blue/transparency   */
+    background-color: rgba(0,0,0,0.8);  
+    text-decoration: none;
+  }
+  
+  
+  /* for simplicity, we ignore search for this exercise */
+  .header > .search {
+    /* TODO use display none to hide search module */
+    display: none;
+  }
+  
+  /* IMPORTANT: multiple selector statements separated by comma */
+  /* It is equivalent to have each separately with same {} body */
+  /* hide checkbox and label */
+  .header > input, 
+  .header > label 
+  {
+    /* TODO use display none to hide */
+    display: none;
+  }
+  
+  .header > .nav {
+    /* TODO make navbar display inline-block */
+    /* TODO make width 100%   */
+    /* TODO make padding 16px */
+    display: inline-block;
+    width: 100%;
+    padding: 0 1 0px 0;
+    text-decoration: none;
+  }
+  
+  .header > .nav > .quick-access {
+    /* TODO make user-group links and quick-access links share with row using inline-block  */
+    /* TODO make quick-access width 30% */
+    /* TODO text align left   */
+    display: inline-block;
+    
+    padding: 50px 20px 0 0;
+    text-decoration: none;
+  
+  }
+  
+  .header > .nav > .quick-access > li, 
+  .header > .nav > .user-group > li 
+  {
+    /* TODO make links side by side using inline-block */
+    /* TODO make left/right padding 4px */
+    display: inline-block;
+    
+    text-align: right;
+    padding: 0 7px;
+    text-decoration: none;
+  
+  
+  }
+  
+  .header > .nav > .quick-access > li > a, 
+  .header > .nav > .user-group > li > a 
+  {
+    /* TODO make all text color white */
+    /* TODO set font type sans-serif */
+    /* TODO set font size smaller 75% */
+    /* TODO set texts to be uppercase */
+    /* TODO remove underline */
+  color: #b1e2b1;
+  font-family: sans-serif;
+  font-size: 100%;  
+  text-transform: uppercase;
+  text-decoration: none;
+    
+  }
+  
+  /* add code for screen less than 700px */
+  @media (max-width: 200px) {
+    
+    .header > #nav + label + .nav {
+      /* TODO hide the navbar when checkbox is unchekced, using display: none */
+      /* TODO set width 320px and padding 16px   */
+      display: none;
+      width: 320px;
+      padding: 16px;
+      background-color: lightgrey;
+      text-decoration: none;
+    }
+  
+    /* the key here is the :checked selector which only select checkbox when it is checked */
+    .header > #nav:checked + label + .nav {
+      /* TODO show navbar when checkbox is checked, using display: block */
+      display: block;
+    }
+  
+    /* use bottom border to implement the seperator line */
+    .header > .nav > .quick-access {
+      /* TODO user-group does not share row with anyone, using display: block   */
+      /* TODO set its width 100%   */    
+      /* TODO align text on the center   */
+  display: block;
+  width: 100%;
+  text-align: center;
+      /* use border as separator line */
+      border: 1px dotted grey;
+    /* only render bottom border by setting border-width: 0 for all other sides   */
+      border-width: 0 0 1px 0;
+      text-decoration: none;
+    }
+  
+    .header > .nav > .quick-access > li {
+      /* TODO place quick-acess links horizontally, using display: inline-block */
+      /* TODO add margin top/right/bottom/left with 0/4px/16px/4px */
+      display: inline-block;
+      margin: 0 4px 16px 4px;
+    }
+  
+    .header > .nav > .user-group {
+      /* TODO user-group does not share row with anyone, using display: block   */
+      /* TODO set its width 100%   */
+      /* TODO align text on the left   */
+      display: block;
+      width: 100%;
+      text-align: left;
+      
+    }
+  
+    .header > .nav > .user-group > li {
+      /* TODO place user-group links vertically, using display: block */
+      /* TODO add margin top/right/bottom/left with 16px/4px/0/12px */
+      /* TODO make font larger 130%    */
+      display: block;
+      margin: 16px 4px 0 12px;
+      font-size: 130%;
+      
+    }  
+  
+    /* TODO dropdown overlap other content. Use position   */
+    .header > .nav {
+      /* TODO position absolute */
+      /* TODO top/right as 48px/0     */
+      /* TODO z-index 100     */
+      /* TODO text align to left */
+      position: absolute;
+      top: 48px;
+      right: 0;
+      z-index: 100;
+      text-align: left;
+      text-decoration: none;
+    }   
+  
+    /* make label as icon   */
+    .header > label {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      padding: 16px;
+  
+      color: white;
+      text-decoration: none;
+    }
+  
+    /* change text color to be black   */
+    .header > .nav > .quick-access > li > a,
+    .header > .nav > .user-group > li > a 
+    {
+      color: #fbeeee;
+    }
+  }
+  
+  .picture {
+    width: 100%;
+    height: 5px;
+    padding: 400px;
+    position: relative;
+    background-color: #85c15c;
+    background-image: url(https://tinyurl.com/4ypwrkvn);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    picture-align: center;
+  }
+  
+  
+  .t {
+      border: solid;
+      box-shadow: 0px 10px 0px;
+      border-radius: 2px;
+      color: #112801;
+      width: auto;
+      height: 50px;
+      background-color: #c1a92f;
+      font-size: xx-large;
+      font-weight: 100;
+      margin-top: 10px;
+    max-width: 120px;
+  }
+  
+  
+  
+  
+  
+  
+  .style > header > .nav > .quick-access > li > a{
+  text-decoration: none;
+    
+  }
+  
+  
+  
+  
+  
+  
+     h5 {
+      margin: 0 0 30px 0;
+      text-align: center;
+      color: #0a0a0a;
+    
+              
+    }
+     
+      
+    
+    
+    form {
+      max-width: 800px;
+      margin: 25px auto;
+      padding: 100px 20px;
+      background: #3f8197;
+      border-radius: 10px;
+    }
+    
+    h1 {
+      margin: 0 0 30px 0;
+      text-align: center;
+      color: #0df20d;
+              
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    textarea,
+    select {
+      background: rgba(255,255,255,0.1);
+      border: none;
+      font-size: 20px;
+      height: auto;
+      margin: 0;
+      outline: 0;
+      padding: 15px;
+      width: 100%;
+      background-color: #e8eeef;
+      color: #8a97a0;
+      box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+      margin-bottom: 30px;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin: 0 4px 8px 0;
+    }
+    
+    select {
+      padding: 6px;
+      height: 32px;
+      border-radius: 2px;
+    }
+    
+    button {
+      padding: 19px 39px 18px 39px;
+      color: #e8f2e8;
+      background-color: #4bc970;
+      font-size: 20px;
+      text-align: center;
+      font-style: normal;
+      border-radius: 5px;
+      width: 50%;
+      border: 1px solid #cbd2cd;
+      border-width: 1px 1px 3px;
+      box-shadow: 0 -1px 0 rgba(255,255,255,0.1) insert;
+      margin-bottom: 10px;
+    }
+    
+    fieldset {
+      margin-bottom: 10px;
+      border: none;
+    }
+    
+    
+  
+    
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    label.light {
+      font-weight: 300;
+      display: inline;
+    }
+    
+    
+  
+  
+      
+  
+     
+    
+   
+   media screen and (min-width: 580px) {
+    
+      table, form {
+        max-width: 480px;
+      }
+    
+    }
+  
+  body {
+    background: #76b852; /* fallback for old browsers */
+    background: rgb(141,194,111);
+    background: linear-gradient(90deg, rgba(141,194,111,1) 0%, rgba(118,184,82,1) 50%);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+  
+  
+  
+  
+  .p1 {
+    opacity: 1;
+    color: yellow;
+    background-color: rgb(48, 46, 51);
+    text-align: center;
+    padding: 10px;
+  /*   text-decoration: none; */
+    font-size: 10px;
+    
+  }
+  
+  footer {
+    
+    opacity: 1;
+    color: yellow;
+    background-color: rgb(48, 46, 51);
+    text-align: center;
+    padding: 30px;
+  /*   text-decoration: none; */
+    font-size: 10px;
+    
+  }
+  
+  footer a {
+    text-shadow: 10px 10px 10px #008015;
+    color: whitesmoke;
+  }
+  
+  footer a:hover {
+    opacity: 1;
+    color: #BEA9DF;
+  /*   background-color: yellow; */
+    text-shadow: 10px 10px 10px yellow;
+    
+  }
