@@ -1,4 +1,5 @@
 <html>
+    
 <body>
 <center> <h1>My Registration Form</h1></center>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -45,6 +46,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
   }
 }
 ?>
-
+<center><a href="userdata.csv?subject=PHP&web=http://localhost/xampptest/php/user_data.php">Submit $GET</a>
+</center>
+<?php
+echo "submit" . $_GET['userdata'] . " at " . $_GET['fname'];
+?>
 </body>
 </html>
