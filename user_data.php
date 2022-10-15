@@ -44,12 +44,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
     echo $dob;
   }
   }
+  {
+    $gender = $_POST['fname'];
+    if (empty(gender)) {
+      echo "Male/Female is not selected";
+    } else {
+      echo $gender;
+    }
+    }
+    {
+        $country = $_POST['fname'];
+        if (empty($country)) {
+          echo "county is empty";
+        } else {
+          echo $country;
+        }
+        }
 }
 ?>
-<center><a href="userdata.csv?subject=PHP&web=http://localhost/xampptest/php/user_data.php">Submit $GET</a>
+<center><a href="userdata.csv?subject=PHP&web=http://localhost/xampptest/php/user_data.php">Getinfo $GET</a>
 </center>
 <?php
-echo "submit" . $_GET['userdata'] . " at " . $_GET['fname'];
+echo "GETinfo" . $_GET['summit'] . " at " . $_GET['button'];
+$_GET['fname']
 ?>
 </body>
 </html>
