@@ -9,31 +9,7 @@
 
 </head>
 <body>
-<form action="calc.php" method="GET">
-
-        <label for="num1">Number 1:
-
-            <input type="number" name="num1">
-
-        </label>
-
-        <br>
-
-        <label for="num2">Number 2:
-
-            <input type="number" name="num2">
-
-        </label>
-
-        <br>
-
-        <br>
-
-        <button type="submit">Submit</button>
-
-    </form>
-
- 
+<form action="form.php" method="GET">
 
 <?php
 
